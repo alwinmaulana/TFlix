@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body, .App, #root{
     width: 100%;
     height: 100%;
     font-family: 'Work Sans', sans-serif;
@@ -28,9 +28,28 @@ header {
     height: 40px;
 }
 main{
-    min-height: 100%;
+    min-height: calc(100% - 70px);
     height: auto;
 }
 footer {
     height: 30px;
+}
+
+.movie-list, .movie-list-row{
+    position: relative;
+    min-width: 100%;
+    width: auto;
+}
+.movie-list-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+.movie-list-card{
+    display: inline-flex;
+    padding: 0px 2px 4px 2px;
+}
+.movie-list-card > img{
+    width: 175px;
 }

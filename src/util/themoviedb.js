@@ -6,7 +6,6 @@
  * https://github.com/cavestri/themoviedb-javascript-library
  *
  */
-
 var theMovieDb = {};
 
 theMovieDb.common = {
@@ -704,7 +703,7 @@ theMovieDb.genres = {
 };
 
 theMovieDb.guestSession = {
-  getRatedMovies: function(success, error) {
+  getRatedMovies: function(options, success, error) {
     'use strict';
 
     theMovieDb.common.validateRequired(arguments, 3, ["id"]);
@@ -718,7 +717,7 @@ theMovieDb.guestSession = {
       error
     );
   },
-  getRatedTvShows: function(success, error) {
+  getRatedTvShows: function(options, success, error) {
     'use strict';
 
     theMovieDb.common.validateRequired(arguments, 3, ["id"]);
@@ -732,7 +731,7 @@ theMovieDb.guestSession = {
       error
     );
   },
-  getRatedTvEpisodes: function(success, error) {
+  getRatedTvEpisodes: function(options, success, error) {
     'use strict';
 
     theMovieDb.common.validateRequired(arguments, 3, ["id"]);
